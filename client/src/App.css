@@ -10,7 +10,43 @@ button.ButtonLabel{
   margin: 20px;  
   float: left;  
 }
- 
+
+.PopUpAddTask{ 
+  position: relative;
+  left: 25%; /* Положение слоя от левого края */
+  top: 50%; /* Положение слоя от верхнего края */
+  background-color: white;
+  border: 1px solid #999;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  font-size: 14px; 
+}
+
+.InputTime, .InputDescription{
+  position: relative;
+  width: 380px;
+  padding: 0px; 
+}
+
+label {
+  position: relative;
+  margin-right: 10px;
+}
+
+.DDPriority, .DDStatus{
+  position: relative;
+  float: left;
+  margin: 10px;  
+}
+
+.SaveButton{
+  position: relative;
+  float: right;
+  margin-top: 10px;
+}
+
 .SearchField {
   float: left;
   position: relative;
@@ -29,7 +65,8 @@ button.ButtonLabel{
  
 h1 {
   margin-left: 1%;
-  margin-top: 0.5%;
+  margin-top: 0.5%;  
+  font-size: 14px;
 }
 
 Table.TaskTable.table.table-bordered{ 
@@ -39,5 +76,4 @@ Table.TaskTable.table.table-bordered{
   width: 960px;
   position: relative;
 }
- 
  
