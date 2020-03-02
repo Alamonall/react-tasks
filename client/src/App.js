@@ -1,23 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import TaskTable from './Table.js';
-import ModalAddTask from './Modal.js';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Button, Modal } from "semantic-ui-react";
+import ModalAddTask from './Modal.js'; 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
 
 const SearchField = () => {
   return (
     <form className='SearchField'>
       <input placeholder='Поиск'/> 
     </form>
-  );
-}
-
-const ButtonLabel = (props) =>{
-  return(
-    <button className='ButtonLabel' onClick={props.onClick}>
-      {props.value}
-    </button>
   );
 }
 
@@ -37,13 +28,13 @@ class App extends Component{
     return (
       <div className="App">
         <h1>Задачи</h1>         
-        <ModalAddTask/>
+        <ModalAddTask buttonLabel='Добавить задачу' ></ModalAddTask>
         <SearchField />
         <div className='FiltrPanel'>
-          <ButtonLabel value={'Всего - ' + this.state.counts.total} />
-          <ButtonLabel value={'Новых - ' + this.state.counts.newones}/>
-          <ButtonLabel value={'В работе - '+this.state.counts.inprocess} />
-          <ButtonLabel value={'Завершено - '+this.state.counts.completed} />
+          <button basic className='LabelButton'>{'Всего - ' + this.state.counts.total}</button>
+          <button className='LabelButton'>{'Новых - ' + this.state.counts.newones}</button>
+          <button className='LabelButton'>{'В работе - '+this.state.counts.inprocess}</button>
+          <button className='LabelButton'>{'Завершено - '+this.state.counts.completed} </button>
         </div>  
         <TaskTable/>        
       </div>

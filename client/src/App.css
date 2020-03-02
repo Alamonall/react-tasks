@@ -5,47 +5,57 @@
   position: absolute;
 } 
 
-button.ButtonLabel{
+.LabelButton{
   position: relative;
   margin: 20px;  
   float: left;  
+  border: none;
 }
 
-.PopUpAddTask{ 
+.AddTaskButton{
   position: relative;
-  left: 25%; /* Положение слоя от левого края */
-  top: 50%; /* Положение слоя от верхнего края */
-  background-color: white;
-  border: 1px solid #999;
-  width: 400px;
-  padding: 10px;
-  margin: 10px;
-  text-align: left;
-  font-size: 14px; 
-}
-
-.InputTime, .InputDescription{
-  position: relative;
-  width: 380px;
-  padding: 0px; 
-}
-
-label {
-  position: relative;
-  margin-right: 10px;
-}
-
-.DDPriority, .DDStatus{
-  position: relative;
-  float: left;
-  margin: 10px;  
+  margin: 20px;  
+  float: left;   
 }
 
 .SaveButton{
-  position: relative;
-  float: right;
+  float: left;
   margin-top: 10px;
+  width: min-content;
 }
+
+.AddTaskPopUp{ 
+  font-size: 14px;
+}
+
+.TimeInput, .DescriptionInput{
+  padding: 0px; 
+  width: 100%;
+}
+
+.Status{
+  float: r
+}
+
+.InputLabel{
+  text-align: left;
+  width: 100%
+}
+
+.SelectLabel {
+  text-align: left;
+  margin-right: 10px;
+}
+
+.PriorityDD, .StatusDD{
+  margin: 10px 10px 10px 0px;  
+  display: inline-block;      
+}
+
+.StatusSelect, .PrioritySelect{
+  float: right;
+}
+
 
 .SearchField {
   float: left;
