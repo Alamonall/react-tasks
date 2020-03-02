@@ -37,9 +37,7 @@ class App extends Component{
     return (
       <div className="App">
         <h1>Задачи</h1>         
-        <Modal trigger={<Button>Добавить задачу</Button>}>
-          <ModalAddTask/>
-        </Modal>
+        <ModalAddTask/>
         <SearchField />
         <div className='FiltrPanel'>
           <ButtonLabel value={'Всего - ' + this.state.counts.total} />
