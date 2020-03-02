@@ -1,0 +1,43 @@
+.App {
+  border: 1px solid #999;
+  margin-left: 20px; 
+  width: 1000px;
+  position: absolute;
+} 
+
+button.ButtonLabel{
+  position: relative;
+  margin: 20px;  
+  float: left;  
+}
+ 
+.SearchField {
+  float: left;
+  position: relative;
+  margin: 20px;
+  text-align: right;
+} 
+
+ 
+.FiltrPanel {
+  position: relative;
+  width: 960px;
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+ 
+h1 {
+  margin-left: 1%;
+  margin-top: 0.5%;
+}
+
+Table.TaskTable.table.table-bordered{ 
+  font-family: Tahoma;
+  font-size: 10pt;    
+  left: 20px;  
+  width: 960px;
+  position: relative;
+}
+ 
+ 
